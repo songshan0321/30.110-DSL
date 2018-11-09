@@ -1,9 +1,86 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Nov 04 16:23:06 2018
+Wed Nov 07 11:12:40 2018
 
 All signals are completely routed.
 
+WARNING:ParHelpers:361 - There are 74 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   btn_left_IBUF
+   btn_right_IBUF
+   exp_io_n<0>_IBUF
+   exp_io_n<10>_IBUF
+   exp_io_n<11>_IBUF
+   exp_io_n<12>_IBUF
+   exp_io_n<13>_IBUF
+   exp_io_n<14>_IBUF
+   exp_io_n<15>_IBUF
+   exp_io_n<16>_IBUF
+   exp_io_n<17>_IBUF
+   exp_io_n<18>_IBUF
+   exp_io_n<19>_IBUF
+   exp_io_n<1>_IBUF
+   exp_io_n<2>_IBUF
+   exp_io_n<3>_IBUF
+   exp_io_n<4>_IBUF
+   exp_io_n<5>_IBUF
+   exp_io_n<6>_IBUF
+   exp_io_n<7>_IBUF
+   exp_io_n<8>_IBUF
+   exp_io_n<9>_IBUF
+   exp_io_p<0>_IBUF
+   exp_io_p<10>_IBUF
+   exp_io_p<11>_IBUF
+   exp_io_p<12>_IBUF
+   exp_io_p<13>_IBUF
+   exp_io_p<14>_IBUF
+   exp_io_p<15>_IBUF
+   exp_io_p<16>_IBUF
+   exp_io_p<17>_IBUF
+   exp_io_p<18>_IBUF
+   exp_io_p<19>_IBUF
+   exp_io_p<1>_IBUF
+   exp_io_p<2>_IBUF
+   exp_io_p<3>_IBUF
+   exp_io_p<4>_IBUF
+   exp_io_p<5>_IBUF
+   exp_io_p<6>_IBUF
+   exp_io_p<7>_IBUF
+   exp_io_p<8>_IBUF
+   exp_io_p<9>_IBUF
+   ja<0>_IBUF
+   ja<1>_IBUF
+   ja<2>_IBUF
+   ja<3>_IBUF
+   ja<4>_IBUF
+   ja<5>_IBUF
+   ja<6>_IBUF
+   ja<7>_IBUF
+   jb<0>_IBUF
+   jb<1>_IBUF
+   jb<2>_IBUF
+   jb<3>_IBUF
+   jb<4>_IBUF
+   jb<5>_IBUF
+   jb<6>_IBUF
+   jb<7>_IBUF
+   jc<0>_IBUF
+   jc<1>_IBUF
+   jc<2>_IBUF
+   jc<3>_IBUF
+   jc<4>_IBUF
+   jc<5>_IBUF
+   jc<6>_IBUF
+   jc<7>_IBUF
+   jd<0>_IBUF
+   jd<1>_IBUF
+   jd<2>_IBUF
+   jd<3>_IBUF
+   jd<4>_IBUF
+   jd<5>_IBUF
+   jd<6>_IBUF
+   jd<7>_IBUF
 
 

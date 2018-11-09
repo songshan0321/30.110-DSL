@@ -1,0 +1,8 @@
+verilog work "../proj_lab4_src/timer_tones.v"
+verilog work "../proj_lab4_src/synchronize.v"
+verilog work "../proj_lab4_src/fuel_pump.v"
+verilog work "../proj_lab4_src/fsm_alarm.v"
+verilog work "../proj_lab4_src/display_4hex.v"
+verilog work "../proj_lab4_src/debounce.v"
+verilog work "../proj_lab4_src/dcm_mgr.v"
+verilog work "../proj_lab4_src/labkit.v"

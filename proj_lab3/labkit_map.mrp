@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sun Nov 04 16:22:36 2018
+Mapped Date    : Wed Nov 07 11:12:15 2018
 
 Design Summary
 --------------
@@ -41,12 +41,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   112 out of   2,278    4%
+  Number of occupied Slices:                   115 out of   2,278    5%
   Number of MUXCYs used:                       196 out of   4,556    4%
-  Number of LUT Flip Flop pairs used:          345
-    Number with an unused Flip Flop:           188 out of     345   54%
-    Number with an unused LUT:                   2 out of     345    1%
-    Number of fully used LUT-FF pairs:         155 out of     345   44%
+  Number of LUT Flip Flop pairs used:          344
+    Number with an unused Flip Flop:           187 out of     344   54%
+    Number with an unused LUT:                   1 out of     344    1%
+    Number of fully used LUT-FF pairs:         156 out of     344   45%
     Number of unique control sets:              16
     Number of slice register sites lost
       to control set restrictions:              90 out of  18,224    1%
@@ -58,7 +58,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        42 out of     232   18%
+  Number of bonded IOBs:                       116 out of     232   50%
+    Number of LOCed IOBs:                      116 out of     116  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -91,11 +92,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.80
+Average Fanout of Non-Clock Nets:                3.20
 
-Peak Memory Usage:  4538 MB
+Peak Memory Usage:  4561 MB
 Total REAL time to MAP completion:  16 secs 
-Total CPU time to MAP completion:   14 secs 
+Total CPU time to MAP completion:   8 secs 
 
 Table of Contents
 -----------------
@@ -124,14 +125,14 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net psolution/vsync_pulse is
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network jd<7> has no load.
+INFO:LIT:243 - Logical network jd<7>_IBUF has no load.
 INFO:LIT:395 - The above info message is repeated 73 more times for the
    following (max. 5 shown):
-   jd<6>,
-   jd<5>,
-   jd<4>,
-   jd<3>,
-   jd<2>
+   jd<6>_IBUF,
+   jd<5>_IBUF,
+   jd<4>_IBUF,
+   jd<3>_IBUF,
+   jd<2>_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -170,48 +171,122 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| btn_down                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| btn_enter                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| btn_up                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| clk_100mhz                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| dig<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| dig<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| dig<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| dig<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| hsync                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| seg<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| switch<0>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<1>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<2>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<3>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<4>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<5>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<6>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| switch<7>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| vgablue<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgablue<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgagreen<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgagreen<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgagreen<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgared<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgared<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vgared<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| vsync                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| btn_down                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| btn_enter                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| btn_left                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| btn_right                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| btn_up                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| clk_100mhz                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| dig<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dig<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dig<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dig<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| exp_io_n<0>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<1>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<2>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<3>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<4>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<5>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<6>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<7>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<8>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<9>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<10>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<11>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<12>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<13>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<14>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<15>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<16>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<17>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<18>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_n<19>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<0>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<1>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<2>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<3>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<4>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<5>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<6>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<7>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<8>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<9>                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<10>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<11>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<12>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<13>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<14>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<15>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<16>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<17>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<18>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| exp_io_p<19>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| hsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ja<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ja<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jb<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jc<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<0>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<1>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<2>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<3>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<4>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<5>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<6>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| jd<7>                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| switch<0>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<1>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<2>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<3>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<4>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<5>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<6>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| switch<7>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| vgablue<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgablue<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgagreen<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgagreen<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgagreen<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgared<0>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgared<1>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgared<2>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

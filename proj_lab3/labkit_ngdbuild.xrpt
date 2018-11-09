@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sun Nov 04 16:22:28 2018">
+  <application stringID="NgdBuild" timeStamp="Wed Nov 07 11:12:10 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\\lib\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\lib\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\..\..\..\DocNav;D:\ProgramFiles\Xilinx\14.6\ISE_DS\PlanAhead\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\lib\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnuwin\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\arm\nt\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\common\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Microsoft VS Code\bin;C:\Users\Windows 10\Anaconda3;C:\Users\Windows 10\Anaconda3\Library\mingw-w64\bin;C:\Users\Windows 10\Anaconda3\Library\usr\bin;C:\Users\Windows 10\Anaconda3\Library\bin;C:\Users\Windows 10\Anaconda3\Scripts;C:\Users\Windows 10\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\EaseUS\Todo Backup\bin\x64\"/>
+          <item stringID="value" value="D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\\lib\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\lib\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\..\..\..\DocNav;D:\ProgramFiles\Xilinx\14.6\ISE_DS\PlanAhead\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\lib\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnuwin\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\arm\nt\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\ProgramFiles\Xilinx\14.6\ISE_DS\common\bin\nt64;D:\ProgramFiles\Xilinx\14.6\ISE_DS\common\lib\nt64;C:\wget;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Microsoft VS Code\bin;D:\ProgramFiles\Git\cmd;C:\Users\Windows 10\Anaconda3;C:\Users\Windows 10\Anaconda3\Library\mingw-w64\bin;C:\Users\Windows 10\Anaconda3\Library\usr\bin;C:\Users\Windows 10\Anaconda3\Library\bin;C:\Users\Windows 10\Anaconda3\Scripts;C:\Users\Windows 10\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -54,13 +54,14 @@
         <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx16-csg324-3"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="D:/Term 6/DSL/30.110-DSL/proj_lab3_src/labkit_nexys3.ucf"/>
       </section>
     </task>
     <task stringID="NGDBUILD_REPORT">
       <section stringID="NGDBUILD_DESIGN_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="65"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
@@ -100,7 +101,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_FDS" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="15"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="11"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="85"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="103"/>

@@ -448,27 +448,6 @@ module round_piped
 endmodule
 ////////////////////////////////////////////////////////////////////////////////////////
 
-//	draw_box #(.WIDTH(PADDLE_WIDTH), .HEIGHT(PADDLE_HEIGHT), .COLOR(8'b000_111_00)) // green
-//	   paddle (.pixel_clk(pixel_clk), .hcount(hcount), .vcount(vcount),
-//		.x(PADDLE_X), .y(paddle_y), .pixel(paddle_pix));
-//		
-//module draw_box
-//	#(parameter WIDTH=200, // default width: 200 pixels
-//					HEIGHT=16, // default height: 64 pixels
-//					COLOR=8'b111_000_00) // default color: red
-//	(input pixel_clk,
-//		input [10:0] hcount, x,
-//		input [9:0] vcount, y,
-//		output reg [7:0] pixel);
-//		always @(hcount or vcount) 
-//			begin
-//				if ((hcount >= x && hcount < (x+WIDTH)) &&
-//					(vcount >= y && vcount < (y+HEIGHT)))
-//					pixel = COLOR;
-//				else pixel = 0;
-//			end
-//endmodule
-
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: Gim P. Hom 3/22/2007

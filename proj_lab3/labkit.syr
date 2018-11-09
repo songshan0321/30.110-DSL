@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Reading design: labkit.prj
 
@@ -130,11 +130,11 @@ Elaborating module <DCM(CLK_FEEDBACK="1X",CLKDV_DIVIDE=4.0,CLKFX_DIVIDE=20,CLKFX
 WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 61: Assignment to clk_100mhz_buf ignored, since the identifier is never used
 
 Elaborating module <debounce>.
-WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 588: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 567: Result of 21-bit expression is truncated to fit in 20-bit target.
 
 Elaborating module <vga_general>.
-WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 557: Result of 32-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 558: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 536: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 537: Result of 32-bit expression is truncated to fit in 10-bit target.
 WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 91: Assignment to hblank1 ignored, since the identifier is never used
 
 Elaborating module <pong_game>.
@@ -156,7 +156,7 @@ WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_part
 WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 148: Result of 32-bit expression is truncated to fit in 31-bit target.
 
 Elaborating module <display_4hex>.
-WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 629: Result of 15-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab3_src\labkit_vga_partialsol_one.v" Line 608: Result of 15-bit expression is truncated to fit in 14-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -196,8 +196,8 @@ Synthesizing Unit <debounce>.
     Found 1-bit register for signal <new>.
     Found 1-bit register for signal <clean>.
     Found 20-bit register for signal <count>.
-    Found 20-bit adder for signal <count[19]_GND_5_o_add_3_OUT> created at line 588.
-    Found 1-bit comparator equal for signal <n0000> created at line 580
+    Found 20-bit adder for signal <count[19]_GND_5_o_add_3_OUT> created at line 567.
+    Found 1-bit comparator equal for signal <n0000> created at line 559
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -217,14 +217,14 @@ Synthesizing Unit <vga_general>.
         vsize = 767
     Found 10-bit register for signal <vcount>.
     Found 11-bit register for signal <hcount>.
-    Found 12-bit adder for signal <n0033[11:0]> created at line 557.
-    Found 11-bit adder for signal <n0035[10:0]> created at line 558.
-    Found 11-bit comparator greater for signal <hcount[10]_PWR_6_o_LessThan_3_o> created at line 547
-    Found 11-bit comparator greater for signal <PWR_6_o_hcount[10]_LessThan_4_o> created at line 547
-    Found 10-bit comparator greater for signal <vcount[9]_PWR_6_o_LessThan_5_o> created at line 548
-    Found 10-bit comparator greater for signal <PWR_6_o_vcount[9]_LessThan_6_o> created at line 548
-    Found 11-bit comparator lessequal for signal <n0008> created at line 550
-    Found 10-bit comparator lessequal for signal <n0010> created at line 551
+    Found 12-bit adder for signal <n0033[11:0]> created at line 536.
+    Found 11-bit adder for signal <n0035[10:0]> created at line 537.
+    Found 11-bit comparator greater for signal <hcount[10]_PWR_6_o_LessThan_3_o> created at line 526
+    Found 11-bit comparator greater for signal <PWR_6_o_hcount[10]_LessThan_4_o> created at line 526
+    Found 10-bit comparator greater for signal <vcount[9]_PWR_6_o_LessThan_5_o> created at line 527
+    Found 10-bit comparator greater for signal <PWR_6_o_vcount[9]_LessThan_6_o> created at line 527
+    Found 11-bit comparator lessequal for signal <n0008> created at line 529
+    Found 10-bit comparator lessequal for signal <n0010> created at line 530
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  21 D-type flip-flop(s).
@@ -330,9 +330,9 @@ Synthesizing Unit <display_4hex>.
     Found 7-bit register for signal <seg>.
     Found 4-bit register for signal <strobe>.
     Found 14-bit register for signal <counter>.
-    Found 14-bit adder for signal <counter[13]_GND_11_o_add_17_OUT> created at line 629.
+    Found 14-bit adder for signal <counter[13]_GND_11_o_add_17_OUT> created at line 608.
     Found 4x4-bit Read Only RAM for signal <counter[13]_PWR_13_o_wide_mux_23_OUT>
-    Found 7-bit 4-to-1 multiplexer for signal <counter[13]_data[3]_wide_mux_22_OUT> created at line 630.
+    Found 7-bit 4-to-1 multiplexer for signal <counter[13]_data[3]_wide_mux_22_OUT> created at line 609.
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
@@ -830,12 +830,12 @@ psolution/vsync_pulse|    5.849|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.86 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.20 secs
  
 --> 
 
-Total memory usage is 4499144 kilobytes
+Total memory usage is 4539904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   43 (   0 filtered)

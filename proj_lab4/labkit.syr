@@ -1,0 +1,789 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: labkit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "labkit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "labkit"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : labkit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" into library work
+Parsing module <timer1>.
+WARNING:HDLCompiler:751 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 33: Redeclaration of ansi port one_hz is not allowed
+Parsing module <tones>.
+Parsing module <four_khz>.
+INFO:HDLCompiler:693 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 95. parameter declaration becomes local in four_khz with formal parameter declaration list
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\synchronize.v" into library work
+Parsing module <synchronize>.
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fuel_pump.v" into library work
+Parsing module <fuel_pump>.
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v" into library work
+Parsing module <fsm_gph>.
+WARNING:HDLCompiler:751 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v" Line 48: Redeclaration of ansi port load_start_timer is not allowed
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\display_4hex.v" into library work
+Parsing module <display_4hex>.
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\dcm_mgr.v" into library work
+Parsing module <dcm_all>.
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" into library work
+Parsing module <labkit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <labkit>.
+
+Elaborating module <SRL16(INIT=16'b1111111111111111)>.
+
+Elaborating module <dcm_all>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <DCM(CLK_FEEDBACK="1X",CLKDV_DIVIDE=4.0,CLKFX_DIVIDE=5,CLKFX_MULTIPLY=2,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=10000.0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 97: Assignment to clk_100mhz_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 108: Result of 32-bit expression is truncated to fit in 26-bit target.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\debounce.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <synchronize>.
+
+Elaborating module <display_4hex>.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\display_4hex.v" Line 46: Result of 15-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <fsm_gph>.
+
+Elaborating module <timer1>.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 39: Result of 32-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 43: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v" Line 189: Assignment to expired ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v" Line 190: Assignment to one_hz ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 162: Size mismatch in connection of port <state>. Formal port size is 4-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 162: Assignment to load_start_timer ignored, since the identifier is never used
+
+Elaborating module <fuel_pump>.
+
+Elaborating module <tones>.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 75: Result of 32-bit expression is truncated to fit in 26-bit target.
+
+Elaborating module <four_khz>.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 100: Result of 32-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v" Line 101: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 201: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 202: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" Line 217: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <labkit>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v".
+WARNING:Xst:647 - Input <jd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" line 94: Output port <CLKSYS> of the instance <my_clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\labkit.v" line 160: Output port <load_start_timer> of the instance <fsm_rev1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <flash>.
+    Found 16-bit register for signal <tick>.
+    Found 16-bit register for signal <sweep>.
+    Found 26-bit register for signal <counter>.
+    Found 4-bit subtractor for signal <PWR_1_o_count[3]_sub_15_OUT> created at line 150.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_20_OUT> created at line 202.
+    Found 27-bit adder for signal <n0083[26:0]> created at line 108.
+    Found 16-bit adder for signal <tick[15]_GND_1_o_add_17_OUT> created at line 201.
+    Found 16-bit comparator lessequal for signal <n0030> created at line 202
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <labkit> synthesized.
+
+Synthesizing Unit <dcm_all>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\dcm_mgr.v".
+    Summary:
+	no macro.
+Unit <dcm_all> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\debounce.v".
+        DELAY = 400000
+    Found 1-bit register for signal <new>.
+    Found 1-bit register for signal <clean>.
+    Found 20-bit register for signal <count>.
+    Found 20-bit adder for signal <count[19]_GND_6_o_add_3_OUT> created at line 26.
+    Found 1-bit comparator equal for signal <n0000> created at line 18
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <synchronize>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\synchronize.v".
+        NSYNC = 2
+    Found 1-bit register for signal <out>.
+    Found 1-bit register for signal <sync>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <synchronize> synthesized.
+
+Synthesizing Unit <display_4hex>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\display_4hex.v".
+    Found 7-bit register for signal <seg>.
+    Found 4-bit register for signal <strobe>.
+    Found 14-bit register for signal <counter>.
+    Found 14-bit adder for signal <counter[13]_GND_8_o_add_17_OUT> created at line 46.
+    Found 4x4-bit Read Only RAM for signal <counter[13]_PWR_9_o_wide_mux_23_OUT>
+    Found 7-bit 4-to-1 multiplexer for signal <counter[13]_data[3]_wide_mux_22_OUT> created at line 47.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <display_4hex> synthesized.
+
+Synthesizing Unit <fsm_gph>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v".
+        ARMED = 0
+        DRIVER_OPEN = 1
+        PASS_OPEN = 2
+        SIREN_ON = 3
+        DISARMED = 4
+        ARM_DELAY_WAIT = 5
+        ARM_DELAY_TIMING = 6
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v" line 188: Output port <expired> of the instance <timer_fsm> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fsm_alarm.v" line 188: Output port <one_hz> of the instance <timer_fsm> is unconnected or connected to loadless signal.
+    Found 4-bit register for signal <T_DRIVER_DELAY>.
+    Found 4-bit register for signal <T_PASSENGER_DELAY>.
+    Found 4-bit register for signal <T_ALARM_ON>.
+    Found 4-bit register for signal <T_ARM_DELAY>.
+    Found 1-bit register for signal <old_driver_door>.
+    Found 1-bit register for signal <old_pass_door>.
+    Found 1-bit register for signal <old_both_door>.
+    Found 1-bit register for signal <load_start_timer>.
+    Found 4-bit register for signal <num_sec>.
+    Found 1-bit register for signal <status_led>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 36                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | my_reset (positive)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred  18 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <fsm_gph> synthesized.
+
+Synthesizing Unit <timer1>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v".
+        DEBUG = 3
+        NORMAL = 39999999
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <old_expired>.
+    Found 26-bit register for signal <sec_count>.
+    Found 5-bit subtractor for signal <GND_10_o_GND_10_o_sub_7_OUT> created at line 43.
+    Found 27-bit adder for signal <n0046[26:0]> created at line 40.
+    Found 5-bit adder for signal <n0048[4:0]> created at line 43.
+    Found 32-bit comparator equal for signal <one_hz> created at line 48
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <timer1> synthesized.
+
+Synthesizing Unit <fuel_pump>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\fuel_pump.v".
+        ON = 1
+        OFF = 0
+        WAIT = 2
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | ignition (negative)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <fuel_pump> synthesized.
+
+Synthesizing Unit <tones>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v".
+        DEBUG = 3
+    Found 1-bit register for signal <tone_out>.
+    Found 26-bit register for signal <counter>.
+    Found 27-bit adder for signal <n0022[26:0]> created at line 75.
+    Found 32-bit comparator lessequal for signal <n0001> created at line 75
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <tones> synthesized.
+
+Synthesizing Unit <four_khz>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\proj_lab4_src\timer_tones.v".
+        DIVIDER = 9258
+    Found 1-bit register for signal <pulse_out>.
+    Found 21-bit register for signal <counter>.
+    Found 22-bit adder for signal <n0019[21:0]> created at line 100.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+Unit <four_khz> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 17
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 17-bit subtractor                                     : 1
+ 20-bit adder                                          : 5
+ 22-bit adder                                          : 1
+ 27-bit adder                                          : 5
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 59
+ 1-bit register                                        : 37
+ 14-bit register                                       : 1
+ 16-bit register                                       : 2
+ 20-bit register                                       : 5
+ 21-bit register                                       : 1
+ 26-bit register                                       : 5
+ 4-bit register                                        : 7
+ 7-bit register                                        : 1
+# Comparators                                          : 10
+ 1-bit comparator equal                                : 5
+ 16-bit comparator lessequal                           : 1
+ 32-bit comparator equal                               : 1
+ 32-bit comparator lessequal                           : 3
+# Multiplexers                                         : 37
+ 1-bit 2-to-1 multiplexer                              : 16
+ 32-bit 2-to-1 multiplexer                             : 10
+ 4-bit 2-to-1 multiplexer                              : 10
+ 7-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <display_4hex>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram_counter[13]_PWR_9_o_wide_mux_23_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <display_4hex> synthesized (advanced).
+
+Synthesizing (advanced) Unit <four_khz>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <four_khz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <labkit>.
+The following registers are absorbed into counter <tick>: 1 register on signal <tick>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <labkit> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 8
+ 17-bit subtractor                                     : 1
+ 27-bit adder                                          : 4
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 9
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 20-bit up counter                                     : 5
+ 21-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+# Comparators                                          : 10
+ 1-bit comparator equal                                : 5
+ 16-bit comparator lessequal                           : 1
+ 32-bit comparator equal                               : 1
+ 32-bit comparator lessequal                           : 3
+# Multiplexers                                         : 38
+ 1-bit 2-to-1 multiplexer                              : 19
+ 32-bit 2-to-1 multiplexer                             : 10
+ 4-bit 2-to-1 multiplexer                              : 8
+ 7-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 10    | 01
+ 01    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <fsm_rev1/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0010  | 0010
+ 0001  | 0001
+ 0100  | 0100
+ 0011  | 0011
+ 0101  | 0101
+ 0110  | 0110
+-------------------
+INFO:Xst:1901 - Instance my_clocks/DCM_inst in unit labkit of type DCM has been replaced by DCM_SP
+
+Optimizing unit <labkit> ...
+WARNING:Xst:1293 - FF/Latch <fsm_rev1/T_ARM_DELAY_0> has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fsm_rev1/T_ALARM_ON_0> has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fsm_rev1/T_DRIVER_DELAY_0> has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fsm_rev1/T_ARM_DELAY_0> has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fsm_rev1/T_ALARM_ON_0> has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fsm_rev1/T_DRIVER_DELAY_0> has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <display_4hex> ...
+
+Optimizing unit <timer1> ...
+
+Optimizing unit <tones> ...
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_25> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_24> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_23> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_22> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_21> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_20> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_18> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_17> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_440/counter_16> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_25> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_24> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_23> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_22> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_21> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_20> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_18> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_17> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_16> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_880/counter_15> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_14> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_15> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_16> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_17> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_18> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pulse_4khz/counter_20> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <db_pass_door/count_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <db_down/count_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <db_driver_door/count_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <db_enter/count_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <db_hidden/count_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_25> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_24> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_23> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_22> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_21> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_20> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_18> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_17> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tone_sweep/counter_16> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <counter_0> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_0> 
+INFO:Xst:2261 - The FF/Latch <counter_1> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_1> 
+INFO:Xst:2261 - The FF/Latch <counter_2> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_2> 
+INFO:Xst:2261 - The FF/Latch <counter_3> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_3> 
+INFO:Xst:2261 - The FF/Latch <counter_4> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_4> 
+INFO:Xst:2261 - The FF/Latch <counter_5> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_5> 
+INFO:Xst:2261 - The FF/Latch <counter_6> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_6> 
+INFO:Xst:2261 - The FF/Latch <counter_7> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_7> 
+INFO:Xst:2261 - The FF/Latch <counter_8> in Unit <labkit> is equivalent to the following FF/Latch, which will be removed : <my_display/counter_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block labkit, actual ratio is 7.
+
+Final Macro Processing ...
+
+Processing Unit <labkit> :
+	Found 2-bit shift register for signal <gen_modules[7].s/out>.
+	Found 2-bit shift register for signal <gen_modules[6].s/out>.
+	Found 2-bit shift register for signal <gen_modules[5].s/out>.
+	Found 2-bit shift register for signal <gen_modules[4].s/out>.
+	Found 2-bit shift register for signal <gen_modules[3].s/out>.
+	Found 2-bit shift register for signal <gen_modules[2].s/out>.
+	Found 2-bit shift register for signal <gen_modules[1].s/out>.
+	Found 2-bit shift register for signal <gen_modules[0].s/out>.
+Unit <labkit> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 303
+ Flip-Flops                                            : 303
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : labkit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1081
+#      GND                         : 1
+#      INV                         : 29
+#      LUT1                        : 227
+#      LUT2                        : 123
+#      LUT3                        : 15
+#      LUT4                        : 59
+#      LUT5                        : 28
+#      LUT6                        : 69
+#      MUXCY                       : 276
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 245
+# FlipFlops/Latches                : 311
+#      FD                          : 51
+#      FDE                         : 50
+#      FDR                         : 115
+#      FDRE                        : 95
+# Shift Registers                  : 9
+#      SRL16                       : 1
+#      SRLC16E                     : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 50
+#      IBUF                        : 13
+#      IBUFG                       : 1
+#      OBUF                        : 36
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             311  out of  18224     1%  
+ Number of Slice LUTs:                  559  out of   9112     6%  
+    Number used as Logic:               550  out of   9112     6%  
+    Number used as Memory:                9  out of   2176     0%  
+       Number used as SRL:                9
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    563
+   Number with an unused Flip Flop:     252  out of    563    44%  
+   Number with an unused LUT:             4  out of    563     0%  
+   Number of fully used LUT-FF pairs:   307  out of    563    54%  
+   Number of unique control sets:        17
+
+IO Utilization: 
+ Number of IOs:                         116
+ Number of bonded IOBs:                  50  out of    232    21%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | DCM_SP:CLKFX           | 319   |
+clk_100mhz                         | IBUFG                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.394ns (Maximum Frequency: 135.239MHz)
+   Minimum input arrival time before clock: 3.681ns
+   Maximum output required time after clock: 5.875ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 7.394ns (frequency: 135.239MHz)
+  Total number of paths / destination ports: 9268 / 606
+-------------------------------------------------------------------------
+Delay:               3.697ns (Levels of Logic = 1)
+  Source:            reset_sr (FF)
+  Destination:       fsm_rev1/T_ALARM_ON_3 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising 0.4X
+
+  Data Path: reset_sr to fsm_rev1/T_ALARM_ON_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16:CLK->Q         26   1.313   1.207  reset_sr (reset)
+     LUT5:I4->O            3   0.205   0.650  fsm_rev1/_n0224_inv1 (fsm_rev1/_n0224_inv)
+     FDE:CE                    0.322          fsm_rev1/T_ALARM_ON_1
+    ----------------------------------------
+    Total                      3.697ns (1.840ns logic, 1.857ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 113 / 113
+-------------------------------------------------------------------------
+Offset:              3.681ns (Levels of Logic = 2)
+  Source:            btn_right (PAD)
+  Destination:       db_pass_door/count_18 (FF)
+  Destination Clock: clk_100mhz rising 0.4X
+
+  Data Path: btn_right to db_pass_door/count_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  btn_right_IBUF (btn_right_IBUF)
+     LUT2:I0->O           19   0.203   1.071  db_pass_door/Mcount_count_val1 (db_pass_door/Mcount_count_val)
+     FDRE:R                    0.430          db_pass_door/count_0
+    ----------------------------------------
+    Total                      3.681ns (1.855ns logic, 1.826ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 42 / 26
+-------------------------------------------------------------------------
+Offset:              5.875ns (Levels of Logic = 2)
+  Source:            reset_sr (FF)
+  Destination:       led<3> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: reset_sr to led<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16:CLK->Q         26   1.313   1.207  reset_sr (reset)
+     LUT2:I1->O            1   0.205   0.579  my_reset1 (led_3_OBUF)
+     OBUF:I->O                 2.571          led_3_OBUF (led<3>)
+    ----------------------------------------
+    Total                      5.875ns (4.089ns logic, 1.786ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    6.296|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.24 secs
+ 
+--> 
+
+Total memory usage is 4539348 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   68 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

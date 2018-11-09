@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle
+ise -v 3 -s 3 -n 3 -fastpaths -xml labkit.twx labkit.ncd -o labkit.twr
+labkit.pcf
+
+Design file:              labkit.ncd
+Physical constraint file: labkit.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_100mhz
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+btn_down    |    6.675(R)|      SLOW  |   -2.966(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+btn_enter   |    6.990(R)|      SLOW  |   -3.208(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+btn_left    |    8.511(R)|      SLOW  |   -3.399(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+btn_right   |    7.841(R)|      SLOW  |   -3.771(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+btn_up      |    6.268(R)|      SLOW  |   -2.633(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<0>   |    4.644(R)|      SLOW  |   -2.641(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<1>   |    4.627(R)|      SLOW  |   -2.670(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<2>   |    4.611(R)|      SLOW  |   -2.630(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<3>   |    4.854(R)|      SLOW  |   -2.806(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<4>   |    4.616(R)|      SLOW  |   -2.701(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<5>   |    4.483(R)|      SLOW  |   -2.583(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<6>   |    4.661(R)|      SLOW  |   -2.725(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+switch<7>   |    4.968(R)|      SLOW  |   -2.916(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk_100mhz to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+dig<0>      |         4.113(R)|      SLOW  |         2.622(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+dig<1>      |         4.174(R)|      SLOW  |         2.649(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+dig<2>      |         4.273(R)|      SLOW  |         2.718(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+dig<3>      |         4.198(R)|      SLOW  |         2.676(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+ja<0>       |         7.410(R)|      SLOW  |         4.064(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+ja<1>       |         4.251(R)|      SLOW  |         2.732(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+ja<2>       |         4.252(R)|      SLOW  |         2.783(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+ja<3>       |         5.927(R)|      SLOW  |         3.582(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+ja<4>       |         5.888(R)|      SLOW  |         3.813(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+ja<5>       |         6.988(R)|      SLOW  |         3.809(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<0>      |         6.291(R)|      SLOW  |         4.015(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<1>      |         7.182(R)|      SLOW  |         4.679(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<2>      |         6.789(R)|      SLOW  |         4.329(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<3>      |        12.308(R)|      SLOW  |         7.563(R)|      FAST  |clk_100mhz_IBUFG  |   0.000|
+            |         7.325(R)|      SLOW  |         4.578(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<4>      |         7.097(R)|      SLOW  |         4.485(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<5>      |         6.969(R)|      SLOW  |         4.385(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<6>      |         5.391(R)|      SLOW  |         3.408(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+led<7>      |         5.220(R)|      SLOW  |         3.316(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<0>      |         4.721(R)|      SLOW  |         3.005(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<1>      |         5.214(R)|      SLOW  |         3.387(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<2>      |         4.785(R)|      SLOW  |         3.051(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<3>      |         5.148(R)|      SLOW  |         3.298(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<4>      |         4.984(R)|      SLOW  |         3.159(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<5>      |         5.204(R)|      SLOW  |         3.295(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<6>      |         5.035(R)|      SLOW  |         3.208(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+seg<7>      |         4.582(R)|      SLOW  |         2.938(R)|      FAST  |clk_40mhz_BUFG    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |  110.877|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Nov 09 13:17:19 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4576 MB
+
+
+
