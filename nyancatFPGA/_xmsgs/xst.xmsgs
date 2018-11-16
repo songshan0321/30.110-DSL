@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 362: &lt;<arg fmt="%s" index="1">paddle_range1</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 350: Module &lt;<arg fmt="%s" index="1">move_ball</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 374: Module &lt;<arg fmt="%s" index="1">round_piped</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 437: Module &lt;<arg fmt="%s" index="1">vga_general</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 519: Module &lt;<arg fmt="%s" index="1">debounce</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 552: Module &lt;<arg fmt="%s" index="1">display_4hex</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"D:\Term 6\DSL\30.110-DSL\nyancat_src\labkit_vga_partialsol_one.v" Line 628: Module &lt;<arg fmt="%s" index="1">dcm_all_v2</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

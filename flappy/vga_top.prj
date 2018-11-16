@@ -1,0 +1,6 @@
+verilog work "../../../../GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/Y_ROM.v"
+verilog work "../../../../GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_RAM.v"
+verilog work "../../../../GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/obstacle_logic.v"
+verilog work "../../../../GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/hvsync_generator.v"
+verilog work "../../../../GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/flight_physics.v"
+verilog work "../../../../GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/vga_top.v"

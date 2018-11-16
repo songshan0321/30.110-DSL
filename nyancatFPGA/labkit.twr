@@ -1,0 +1,108 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ProgramFiles\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle
+ise -v 3 -s 3 -n 3 -fastpaths -xml labkit.twx labkit.ncd -o labkit.twr
+labkit.pcf
+
+Design file:              labkit.ncd
+Physical constraint file: labkit.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_100mhz
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+btn_down    |    4.672(R)|      SLOW  |   -1.620(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+btn_enter   |    6.370(R)|      SLOW  |   -2.328(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+btn_up      |    5.422(R)|      SLOW  |   -1.722(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+switch<0>   |    4.700(R)|      SLOW  |   -1.784(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+switch<1>   |    4.281(R)|      SLOW  |   -1.641(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk_100mhz to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+dig<0>      |         5.566(R)|      SLOW  |         3.589(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+dig<1>      |         5.516(R)|      SLOW  |         3.575(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+dig<2>      |         5.911(R)|      SLOW  |         3.809(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+dig<3>      |         5.714(R)|      SLOW  |         3.686(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+hsync       |         6.818(R)|      SLOW  |         4.482(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<0>      |         5.989(R)|      SLOW  |         3.900(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<1>      |         6.471(R)|      SLOW  |         4.250(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<2>      |         6.017(R)|      SLOW  |         3.887(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<3>      |         6.165(R)|      SLOW  |         3.959(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<4>      |         6.126(R)|      SLOW  |         3.950(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<5>      |         6.196(R)|      SLOW  |         3.997(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+seg<6>      |         6.289(R)|      SLOW  |         4.068(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgablue<1>  |         7.598(R)|      SLOW  |         4.738(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgablue<2>  |         7.437(R)|      SLOW  |         4.641(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgagreen<0> |         7.366(R)|      SLOW  |         4.544(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgagreen<1> |         7.401(R)|      SLOW  |         4.576(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgagreen<2> |         7.735(R)|      SLOW  |         4.834(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgared<0>   |         8.944(R)|      SLOW  |         5.599(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgared<1>   |         8.934(R)|      SLOW  |         5.604(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vgared<2>   |         9.102(R)|      SLOW  |         5.681(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+vsync       |         6.304(R)|      SLOW  |         4.095(R)|      FAST  |clk_65mhz_BUFG    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |  221.788|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switch<0>      |led<0>         |    7.437|
+switch<1>      |led<1>         |    7.710|
+switch<2>      |led<2>         |    7.352|
+switch<3>      |led<3>         |    8.125|
+switch<4>      |led<4>         |    6.943|
+switch<5>      |led<5>         |    6.999|
+switch<6>      |led<6>         |    6.932|
+switch<7>      |led<7>         |    7.498|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Nov 16 20:29:26 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4576 MB
+
+
+

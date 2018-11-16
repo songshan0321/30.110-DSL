@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Term 6\DSL\30.110-DSL\nyancatFPGA\labkit.ncd
+OUTFILE=D:\Term 6\DSL\30.110-DSL\nyancatFPGA\labkit.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Term 6\DSL\30.110-DSL\nyancatFPGA
+LICENSE=WebPack
+USER_INFO=211611104_0_0_634
