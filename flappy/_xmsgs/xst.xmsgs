@@ -119,34 +119,34 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Sw0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">313</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">x_ram</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">313</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">x_ram</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">313</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">x_ram</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">313</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">x_ram</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">313</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Stop</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">x_ram</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">313</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Stop</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">x_ram</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">352</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obs_log</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">352</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obs_log</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">352</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Check</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obs_log</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">352</arg>: Output port &lt;<arg fmt="%s" index="3">Q_Check</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">obs_log</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">PositiveSpeed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">PositiveSpeed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">NegativeSpeed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">NegativeSpeed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">q_Flight</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">q_Flight</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">q_Stop</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">q_Stop</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">flight_control</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">sq_figure</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">vga_top</arg>&apos;, is tied to its initial value.
