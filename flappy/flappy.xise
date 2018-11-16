@@ -15,76 +15,82 @@
   <version xil_pn:ise_version="14.6" xil_pn:schema_version="2"/>
 
   <files>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/ee201_debounce_DPB_SCEN_CCEN_MCEN.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/flight_physics_tb.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/hvsync_generator_tb.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/obstacle_logic_tb.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/top_tb.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_RAM_tb.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/Y_ROM_tb.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../flappy_src/ee201_debounce_DPB_SCEN_CCEN_MCEN.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="66"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/flight_physics.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+    <file xil_pn:name="../flappy_src/flight_control.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="67"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/flight_physics_tb.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="3"/>
+    <file xil_pn:name="../flappy_src/flight_physics_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="68"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="68"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="68"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="68"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/hvsync_generator.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+    <file xil_pn:name="../flappy_src/hvsync_generator.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="69"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/hvsync_generator_tb.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="5"/>
+    <file xil_pn:name="../flappy_src/hvsync_generator_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="70"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/nexys3.ucf" xil_pn:type="FILE_UCF">
+    <file xil_pn:name="../flappy_src/nexys3.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/obstacle_logic.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
+    <file xil_pn:name="../flappy_src/obstacle_logic.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="72"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/obstacle_logic_tb.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="8"/>
+    <file xil_pn:name="../flappy_src/obstacle_logic_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="73"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/top_tb.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="9"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="9"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="9"/>
+    <file xil_pn:name="../flappy_src/top_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="74"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="74"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="74"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="74"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/vga_top.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
+    <file xil_pn:name="../flappy_src/vga_top.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="75"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_initial_ROM.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
+    <file xil_pn:name="../flappy_src/X_initial_ROM.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="76"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_RAM.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+    <file xil_pn:name="../flappy_src/X_RAM.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="77"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_RAM_tb.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="13"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="13"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="13"/>
+    <file xil_pn:name="../flappy_src/X_RAM_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="78"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="78"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="78"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="78"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/Y_ROM.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+    <file xil_pn:name="../flappy_src/Y_ROM.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="79"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
-    <file xil_pn:name="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/Y_ROM_tb.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="15"/>
+    <file xil_pn:name="../flappy_src/Y_ROM_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="80"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="80"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="80"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="80"/>
     </file>
   </files>
 
@@ -149,6 +155,7 @@
     <property xil_pn:name="Enable Cyclic Redundancy Checking (CRC) spartan6" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Debugging of Serial Mode BitStream" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable External Master Clock spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Hardware Co-Simulation" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Enable Message Filtering" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Multi-Pin Wake-Up Suspend Mode spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
@@ -202,7 +209,7 @@
     <property xil_pn:name="Ignore User Timing Constraints Map" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Ignore User Timing Constraints Par" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Implementation Top" xil_pn:value="Module|vga_top" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top File" xil_pn:value="D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/vga_top.v" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top File" xil_pn:value="../flappy_src/vga_top.v" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/vga_top" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Include 'uselib Directive in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include SIMPRIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>

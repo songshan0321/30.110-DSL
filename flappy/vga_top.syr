@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: vga_top.prj
 
@@ -105,68 +105,73 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\Y_ROM.v" into library work
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\flappy_src\Y_ROM.v" into library work
 Parsing module <Y_ROM>.
-Analyzing Verilog file "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v" into library work
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v" into library work
 Parsing module <X_RAM_NOREAD>.
-Analyzing Verilog file "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\obstacle_logic.v" into library work
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\flappy_src\obstacle_logic.v" into library work
 Parsing module <obstacle_logic>.
-Analyzing Verilog file "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\hvsync_generator.v" into library work
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\flappy_src\hvsync_generator.v" into library work
 Parsing module <hvsync_generator>.
-Analyzing Verilog file "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\flight_physics.v" into library work
-Parsing module <flight_physics>.
-Analyzing Verilog file "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" into library work
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v" into library work
+Parsing module <flight_control>.
+Analyzing Verilog file "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" into library work
 Parsing module <vga_top>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
+WARNING:HDLCompiler:1016 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 370: Port PositiveSpeed is not connected to this instance
 
 Elaborating module <vga_top>.
 
 Elaborating module <BUF>.
 
 Elaborating module <hvsync_generator>.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\hvsync_generator.v" Line 34: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\hvsync_generator.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 133: Signal <SEG1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 134: Signal <SEG3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 135: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 136: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 137: Signal <SEG1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 138: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 139: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 140: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 141: Signal <SEG1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 142: Signal <SEG6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 143: Signal <SEG2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 192: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\hvsync_generator.v" Line 34: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\hvsync_generator.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 133: Signal <SEG1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 134: Signal <SEG3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 135: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 136: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 137: Signal <SEG1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 138: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 139: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 140: Signal <SEG5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 141: Signal <SEG1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 142: Signal <SEG6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 143: Signal <SEG2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 154: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 155: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 230: Result of 8-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <X_RAM_NOREAD>.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v" Line 159: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v" Line 163: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v" Line 167: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v" Line 171: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v" Line 175: Result of 4-bit expression is truncated to fit in 3-bit target.
-WARNING:HDLCompiler:1127 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 278: Assignment to q_InitialX ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v" Line 159: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v" Line 163: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v" Line 167: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v" Line 171: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v" Line 175: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 316: Assignment to q_InitialX ignored, since the identifier is never used
 
 Elaborating module <Y_ROM>.
 
 Elaborating module <obstacle_logic>.
-WARNING:HDLCompiler:1127 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 314: Assignment to q_Initial ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 352: Assignment to q_Initial ignored, since the identifier is never used
 
-Elaborating module <flight_physics>.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\flight_physics.v" Line 123: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\flight_physics.v" Line 131: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\flight_physics.v" Line 141: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:1127 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" Line 333: Assignment to q_InitialF ignored, since the identifier is never used
+Elaborating module <flight_control>.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v" Line 97: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v" Line 98: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v" Line 102: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v" Line 103: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v" Line 62: Assignment to j ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" Line 372: Assignment to q_InitialF ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <vga_top>.
-    Related source file is "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v".
+    Related source file is "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v".
 WARNING:Xst:647 - Input <Sw7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Sw6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Sw5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -175,23 +180,27 @@ WARNING:Xst:647 - Input <Sw3> is never used. This port will be preserved and lef
 WARNING:Xst:647 - Input <Sw2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Sw1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Sw0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 275: Output port <Q_Initial> of the instance <x_ram> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 275: Output port <Q_Count> of the instance <x_ram> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 275: Output port <Q_Stop> of the instance <x_ram> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 314: Output port <Q_Initial> of the instance <obs_log> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 314: Output port <Q_Check> of the instance <obs_log> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 331: Output port <PositiveSpeed> of the instance <flight_phys> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 331: Output port <NegativeSpeed> of the instance <flight_phys> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 331: Output port <q_Initial> of the instance <flight_phys> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 331: Output port <q_Flight> of the instance <flight_phys> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_top.v" line 331: Output port <q_Stop> of the instance <flight_phys> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 313: Output port <Q_Initial> of the instance <x_ram> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 313: Output port <Q_Count> of the instance <x_ram> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 313: Output port <Q_Stop> of the instance <x_ram> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 352: Output port <Q_Initial> of the instance <obs_log> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 352: Output port <Q_Check> of the instance <obs_log> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 370: Output port <PositiveSpeed> of the instance <flight_control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 370: Output port <NegativeSpeed> of the instance <flight_control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 370: Output port <q_Initial> of the instance <flight_control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 370: Output port <q_Flight> of the instance <flight_control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Term 6\DSL\30.110-DSL\flappy_src\vga_top.v" line 370: Output port <q_Stop> of the instance <flight_control> is unconnected or connected to loadless signal.
+WARNING:Xst:2999 - Signal 'sq_figure', unconnected in block 'vga_top', is tied to its initial value.
     Found 28-bit register for signal <DIV_CLK>.
     Found 3-bit register for signal <vga_r>.
     Found 3-bit register for signal <vga_g>.
     Found 2-bit register for signal <vga_b>.
     Found 1-bit register for signal <Flash_Blue>.
     Found 28-bit adder for signal <DIV_CLK[27]_GND_1_o_add_0_OUT> created at line 102.
+    Found 5-bit subtractor for signal <sq_fig_x> created at line 151.
+    Found 5-bit subtractor for signal <sq_fig_y> created at line 152.
     Found 16x7-bit Read Only RAM for signal <SSD_CATHODES>
+    Found 1024x1-bit Read Only RAM for signal <GND_1_o_GND_1_o_equal_36_o>
     Found 1-bit 13-to-1 multiplexer for signal <VGA_NUM_OUTPUT> created at line 131.
     Found 10-bit comparator lessequal for signal <n0004> created at line 119
     Found 10-bit comparator lessequal for signal <n0007> created at line 119
@@ -205,40 +214,40 @@ INFO:Xst:3210 - "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\vga_to
     Found 10-bit comparator lessequal for signal <n0036> created at line 124
     Found 10-bit comparator lessequal for signal <n0039> created at line 125
     Found 10-bit comparator lessequal for signal <n0042> created at line 125
-    Found 10-bit comparator lessequal for signal <n0079> created at line 150
-    Found 10-bit comparator lessequal for signal <n0081> created at line 150
-    Found 10-bit comparator lessequal for signal <n0084> created at line 151
-    Found 10-bit comparator lessequal for signal <n0087> created at line 151
-    Found 10-bit comparator lessequal for signal <n0092> created at line 154
-    Found 10-bit comparator lessequal for signal <n0094> created at line 154
-    Found 10-bit comparator lessequal for signal <n0097> created at line 154
-    Found 10-bit comparator lessequal for signal <n0099> created at line 154
-    Found 10-bit comparator lessequal for signal <n0103> created at line 155
-    Found 10-bit comparator lessequal for signal <n0105> created at line 155
-    Found 10-bit comparator lessequal for signal <n0108> created at line 155
-    Found 10-bit comparator lessequal for signal <n0110> created at line 155
-    Found 10-bit comparator lessequal for signal <n0115> created at line 156
-    Found 10-bit comparator lessequal for signal <n0117> created at line 156
-    Found 10-bit comparator lessequal for signal <n0120> created at line 156
-    Found 10-bit comparator lessequal for signal <n0122> created at line 156
-    Found 10-bit comparator lessequal for signal <n0127> created at line 157
-    Found 10-bit comparator lessequal for signal <n0129> created at line 157
-    Found 10-bit comparator lessequal for signal <n0132> created at line 157
-    Found 10-bit comparator lessequal for signal <n0134> created at line 157
-    Found 10-bit comparator lessequal for signal <n0139> created at line 158
-    Found 10-bit comparator lessequal for signal <n0141> created at line 158
-    Found 10-bit comparator lessequal for signal <n0144> created at line 158
-    Found 10-bit comparator lessequal for signal <n0146> created at line 158
+    Found 10-bit comparator lessequal for signal <n0083> created at line 181
+    Found 10-bit comparator lessequal for signal <n0085> created at line 181
+    Found 10-bit comparator lessequal for signal <n0088> created at line 182
+    Found 10-bit comparator lessequal for signal <n0091> created at line 182
+    Found 10-bit comparator lessequal for signal <n0097> created at line 186
+    Found 10-bit comparator lessequal for signal <n0099> created at line 186
+    Found 10-bit comparator lessequal for signal <n0102> created at line 186
+    Found 10-bit comparator lessequal for signal <n0105> created at line 187
+    Found 10-bit comparator lessequal for signal <n0107> created at line 187
+    Found 10-bit comparator lessequal for signal <n0110> created at line 187
+    Found 10-bit comparator lessequal for signal <n0114> created at line 188
+    Found 10-bit comparator lessequal for signal <n0116> created at line 188
+    Found 10-bit comparator lessequal for signal <n0119> created at line 188
+    Found 10-bit comparator lessequal for signal <n0123> created at line 189
+    Found 10-bit comparator lessequal for signal <n0125> created at line 189
+    Found 10-bit comparator lessequal for signal <n0128> created at line 189
+    Found 10-bit comparator lessequal for signal <n0132> created at line 190
+    Found 10-bit comparator lessequal for signal <n0134> created at line 190
+    Found 10-bit comparator lessequal for signal <n0137> created at line 190
+    Found 10-bit comparator lessequal for signal <n0145> created at line 194
+    Found 10-bit comparator lessequal for signal <n0148> created at line 195
+    Found 10-bit comparator lessequal for signal <n0152> created at line 196
+    Found 10-bit comparator lessequal for signal <n0156> created at line 197
+    Found 10-bit comparator lessequal for signal <n0160> created at line 198
     Summary:
-	inferred   1 RAM(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
 	inferred  37 D-type flip-flop(s).
 	inferred  36 Comparator(s).
 	inferred   5 Multiplexer(s).
 Unit <vga_top> synthesized.
 
 Synthesizing Unit <hvsync_generator>.
-    Related source file is "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\hvsync_generator.v".
+    Related source file is "D:\Term 6\DSL\30.110-DSL\flappy_src\hvsync_generator.v".
     Found 10-bit register for signal <CounterY>.
     Found 10-bit register for signal <CounterX>.
     Found 1-bit register for signal <vga_HS>.
@@ -258,7 +267,7 @@ Synthesizing Unit <hvsync_generator>.
 Unit <hvsync_generator> synthesized.
 
 Synthesizing Unit <X_RAM_NOREAD>.
-    Related source file is "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\X_RAM.v".
+    Related source file is "D:\Term 6\DSL\30.110-DSL\flappy_src\X_RAM.v".
         X0_init = 0
         X1_init = 142
         X2_init = 284
@@ -327,19 +336,24 @@ Synthesizing Unit <X_RAM_NOREAD>.
 Unit <X_RAM_NOREAD> synthesized.
 
 Synthesizing Unit <Y_ROM>.
-    Related source file is "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\Y_ROM.v".
-        E0 = 210
-        E1 = 252
-        E2 = 180
-        E3 = 110
-        E4 = 314
+    Related source file is "D:\Term 6\DSL\30.110-DSL\flappy_src\Y_ROM.v".
+        ET0 = 50
+        ET1 = 100
+        ET2 = 150
+        ET3 = 110
+        ET4 = 80
+        EB0 = 250
+        EB1 = 220
+        EB2 = 230
+        EB3 = 270
+        EB4 = 280
     Found 8x100-bit Read Only RAM for signal <_n0029>
     Summary:
 	inferred   1 RAM(s).
 Unit <Y_ROM> synthesized.
 
 Synthesizing Unit <obstacle_logic>.
-    Related source file is "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\obstacle_logic.v".
+    Related source file is "D:\Term 6\DSL\30.110-DSL\flappy_src\obstacle_logic.v".
     Found 3-bit register for signal <state>.
     Found 32-bit register for signal <loseCounter>.
     Found finite state machine <FSM_1> for signal <state>.
@@ -368,10 +382,11 @@ Synthesizing Unit <obstacle_logic>.
 	inferred   1 Finite State Machine(s).
 Unit <obstacle_logic> synthesized.
 
-Synthesizing Unit <flight_physics>.
-    Related source file is "D:\GitHub\FlappyFPGA-master\FlappyFPGA-master\Flappy-VGA\flight_physics.v".
-        JUMP_VELOCITY = 10
-        GRAVITY = 1
+Synthesizing Unit <flight_control>.
+    Related source file is "D:\Term 6\DSL\30.110-DSL\flappy_src\flight_control.v".
+        step = 4
+        MIN_BIRD_Y = 4
+        MAX_BIRD_Y = 639
     Found 3-bit register for signal <state>.
     Found 10-bit register for signal <PositiveSpeed>.
     Found 10-bit register for signal <NegativeSpeed>.
@@ -379,7 +394,6 @@ Synthesizing Unit <flight_physics>.
     Found 10-bit register for signal <Bird_X_R>.
     Found 10-bit register for signal <Bird_Y_T>.
     Found 10-bit register for signal <Bird_Y_B>.
-    Found 1-bit register for signal <j>.
     Found finite state machine <FSM_2> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
@@ -393,47 +407,39 @@ Synthesizing Unit <flight_physics>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 10-bit subtractor for signal <Bird_Y_T[9]_PositiveSpeed[9]_sub_7_OUT> created at line 101.
-    Found 10-bit subtractor for signal <Bird_Y_B[9]_PositiveSpeed[9]_sub_8_OUT> created at line 102.
-    Found 11-bit adder for signal <n0121> created at line 112.
-    Found 11-bit adder for signal <n0122> created at line 115.
-    Found 10-bit adder for signal <NegativeSpeed[9]_GND_9_o_add_32_OUT> created at line 141.
-    Found 10-bit subtractor for signal <GND_9_o_GND_9_o_sub_27_OUT<9:0>> created at line 123.
-    Found 10-bit subtractor for signal <GND_9_o_GND_9_o_sub_29_OUT<9:0>> created at line 131.
-    Found 10-bit comparator greater for signal <GND_9_o_PositiveSpeed[9]_LessThan_5_o> created at line 99
-    Found 10-bit comparator greater for signal <Bird_Y_T[9]_PositiveSpeed[9]_LessThan_9_o> created at line 104
-    Found 10-bit comparator greater for signal <Bird_Y_B[9]_PositiveSpeed[9]_LessThan_10_o> created at line 104
-    Found 10-bit comparator greater for signal <GND_9_o_NegativeSpeed[9]_LessThan_13_o> created at line 110
-    Found 11-bit comparator greater for signal <GND_9_o_BUS_0003_LessThan_18_o> created at line 115
-    Found 11-bit comparator greater for signal <GND_9_o_BUS_0004_LessThan_20_o> created at line 115
-    Found 10-bit comparator greater for signal <PositiveSpeed[9]_GND_9_o_LessThan_28_o> created at line 127
-    Found 10-bit comparator greater for signal <GND_9_o_NegativeSpeed[9]_LessThan_34_o> created at line 142
+    Found 10-bit adder for signal <Bird_Y_T[9]_GND_9_o_add_6_OUT> created at line 102.
+    Found 10-bit adder for signal <Bird_Y_B[9]_GND_9_o_add_7_OUT> created at line 103.
+    Found 10-bit subtractor for signal <GND_9_o_GND_9_o_sub_4_OUT<9:0>> created at line 97.
+    Found 10-bit subtractor for signal <GND_9_o_GND_9_o_sub_5_OUT<9:0>> created at line 98.
+    Found 10-bit comparator greater for signal <GND_9_o_Bird_Y_T[9]_LessThan_3_o> created at line 95
+    Found 10-bit comparator greater for signal <Bird_Y_B[9]_PWR_8_o_LessThan_6_o> created at line 100
     Summary:
-	inferred   6 Adder/Subtractor(s).
-	inferred  61 D-type flip-flop(s).
-	inferred   8 Comparator(s).
-	inferred  19 Multiplexer(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  60 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
-Unit <flight_physics> synthesized.
+Unit <flight_control> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
+ 1024x1-bit single-port Read Only RAM                  : 1
  16x7-bit single-port Read Only RAM                    : 1
  8x100-bit single-port Read Only RAM                   : 1
-# Adders/Subtractors                                   : 26
+# Adders/Subtractors                                   : 24
  10-bit adder                                          : 2
- 10-bit addsub                                         : 1
- 10-bit subtractor                                     : 13
- 11-bit adder                                          : 2
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 10
  28-bit adder                                          : 1
  3-bit adder                                           : 5
  32-bit adder                                          : 1
  4-bit adder                                           : 1
-# Registers                                            : 26
- 1-bit register                                        : 5
+ 5-bit subtractor                                      : 2
+# Registers                                            : 25
+ 1-bit register                                        : 4
  10-bit register                                       : 8
  2-bit register                                        : 1
  28-bit register                                       : 1
@@ -441,15 +447,14 @@ Macro Statistics
  32-bit register                                       : 1
  4-bit register                                        : 1
  50-bit register                                       : 2
-# Comparators                                          : 54
- 10-bit comparator greater                             : 13
+# Comparators                                          : 48
+ 10-bit comparator greater                             : 9
  10-bit comparator lessequal                           : 38
- 11-bit comparator greater                             : 2
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 198
+# Multiplexers                                         : 185
  1-bit 13-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 154
- 10-bit 2-to-1 multiplexer                             : 21
+ 10-bit 2-to-1 multiplexer                             : 8
  10-bit 5-to-1 multiplexer                             : 10
  3-bit 2-to-1 multiplexer                              : 10
  4-bit 2-to-1 multiplexer                              : 2
@@ -462,26 +467,26 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_9> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_8> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_7> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_6> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_5> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_4> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_3> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_2> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_1> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_0> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_9> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_8> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_7> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_6> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_5> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_4> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_3> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_2> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_1> (without init value) has a constant value of 1 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <Bird_X_L_0> (without init value) has a constant value of 0 in block <flight_phys>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_9> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_8> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_7> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_6> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_5> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_4> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_3> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_2> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_1> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_R_0> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_9> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_8> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_7> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_6> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_5> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_4> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_3> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_2> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_1> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Bird_X_L_0> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Y_ROM>.
 INFO:Xst:3231 - The small RAM <Mram__n0029> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -519,36 +524,47 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SSD_CATHODES> will be implemented on
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <Cg>            |          |
     -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_1_o_GND_1_o_equal_36_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(sq_fig_y,sq_fig_x)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
 Unit <vga_top> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 3
+ 1024x1-bit single-port distributed Read Only RAM      : 1
  16x7-bit single-port distributed Read Only RAM        : 1
  8x100-bit single-port distributed Read Only RAM       : 1
-# Adders/Subtractors                                   : 22
- 10-bit addsub                                         : 1
- 10-bit subtractor                                     : 13
- 11-bit adder                                          : 2
+# Adders/Subtractors                                   : 20
+ 10-bit addsub                                         : 2
+ 10-bit subtractor                                     : 10
  3-bit adder                                           : 5
  4-bit adder                                           : 1
+ 5-bit subtractor                                      : 2
 # Counters                                             : 4
  10-bit up counter                                     : 2
  28-bit up counter                                     : 1
  32-bit up counter                                     : 1
-# Registers                                            : 192
- Flip-Flops                                            : 192
-# Comparators                                          : 54
- 10-bit comparator greater                             : 13
+# Registers                                            : 191
+ Flip-Flops                                            : 191
+# Comparators                                          : 48
+ 10-bit comparator greater                             : 9
  10-bit comparator lessequal                           : 38
- 11-bit comparator greater                             : 2
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 196
+# Multiplexers                                         : 183
  1-bit 13-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 154
- 10-bit 2-to-1 multiplexer                             : 19
+ 10-bit 2-to-1 multiplexer                             : 6
  10-bit 5-to-1 multiplexer                             : 10
  3-bit 2-to-1 multiplexer                              : 10
  4-bit 2-to-1 multiplexer                              : 2
@@ -559,29 +575,58 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <Bird_X_R_9> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_8> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_7> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_6> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_5> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_4> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_3> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_2> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_1> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_0> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_9> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_8> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_7> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_6> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_5> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_4> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_3> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_2> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_1> (without init value) has a constant value of 1 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_0> (without init value) has a constant value of 0 in block <flight_physics>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <NegativeSpeed_0> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_1> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_2> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_3> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_4> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_5> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_6> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_7> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_8> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NegativeSpeed_9> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_0> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_1> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_2> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_3> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_4> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_5> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_6> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_7> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_8> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_R_9> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_0> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_1> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_2> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_3> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_4> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_5> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_6> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_7> (without init value) has a constant value of 1 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_8> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Bird_X_L_9> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_0> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_1> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_2> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_3> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_4> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_5> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_6> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_7> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_8> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PositiveSpeed_9> (without init value) has a constant value of 0 in block <flight_control>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <vga_b_0> in Unit <vga_top> is equivalent to the following FF/Latch, which will be removed : <vga_b_1> 
 INFO:Xst:2261 - The FF/Latch <vga_g_0> in Unit <vga_top> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_g_1> <vga_g_2> 
 INFO:Xst:2261 - The FF/Latch <vga_r_0> in Unit <vga_top> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_r_1> <vga_r_2> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <flight_control/FSM_2> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 001   | 00
+ 010   | 01
+ 100   | 10
+-------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <x_ram/FSM_0> on signal <state[1:2]> with sequential encoding.
 -------------------
@@ -600,15 +645,6 @@ Optimizing FSM <obs_log/FSM_1> on signal <state[1:2]> with gray encoding.
  010   | 01
  100   | 11
 -------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <flight_phys/FSM_2> on signal <state[1:2]> with sequential encoding.
--------------------
- State | Encoding
--------------------
- 001   | 00
- 010   | 01
- 100   | 10
--------------------
 WARNING:Xst:2677 - Node <DIV_CLK_23> of sequential type is unconnected in block <vga_top>.
 WARNING:Xst:2677 - Node <DIV_CLK_24> of sequential type is unconnected in block <vga_top>.
 WARNING:Xst:2677 - Node <DIV_CLK_25> of sequential type is unconnected in block <vga_top>.
@@ -617,35 +653,23 @@ WARNING:Xst:2677 - Node <DIV_CLK_27> of sequential type is unconnected in block 
 
 Optimizing unit <vga_top> ...
 
+Optimizing unit <flight_control> ...
+
 Optimizing unit <X_RAM_NOREAD> ...
+
+Optimizing unit <hvsync_generator> ...
 
 Optimizing unit <obstacle_logic> ...
 
-Optimizing unit <flight_physics> ...
-
-Optimizing unit <hvsync_generator> ...
-WARNING:Xst:1710 - FF/Latch <flight_phys/Bird_Y_B_9> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/NegativeSpeed_9> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/PositiveSpeed_9> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/PositiveSpeed_8> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/PositiveSpeed_7> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/PositiveSpeed_6> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/PositiveSpeed_5> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/PositiveSpeed_4> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <flight_phys/Bird_Y_T_9> (without init value) has a constant value of 0 in block <vga_top>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <flight_phys/Bird_Y_B_0> in Unit <vga_top> is equivalent to the following FF/Latch, which will be removed : <flight_phys/Bird_Y_T_0> 
-INFO:Xst:2261 - The FF/Latch <flight_phys/Bird_Y_B_1> in Unit <vga_top> is equivalent to the following FF/Latch, which will be removed : <flight_phys/Bird_Y_T_1> 
-
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block vga_top, actual ratio is 14.
-FlipFlop flight_phys/PositiveSpeed_0 has been replicated 1 time(s)
-FlipFlop flight_phys/PositiveSpeed_1 has been replicated 1 time(s)
-FlipFlop flight_phys/PositiveSpeed_2 has been replicated 1 time(s)
-FlipFlop flight_phys/PositiveSpeed_3 has been replicated 1 time(s)
-FlipFlop x_ram/out_pipe_0 has been replicated 1 time(s)
-FlipFlop x_ram/out_pipe_1 has been replicated 1 time(s)
-FlipFlop x_ram/out_pipe_2 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block vga_top, actual ratio is 13.
+FlipFlop syncgen/CounterX_2 has been replicated 1 time(s)
+FlipFlop syncgen/CounterX_6 has been replicated 1 time(s)
+FlipFlop syncgen/CounterX_7 has been replicated 1 time(s)
+FlipFlop syncgen/CounterY_1 has been replicated 1 time(s)
+FlipFlop syncgen/CounterY_2 has been replicated 1 time(s)
+FlipFlop syncgen/CounterY_5 has been replicated 1 time(s)
 FlipFlop vga_r_0 has been replicated 2 time(s) to handle iob=true attribute.
 FlipFlop vga_g_0 has been replicated 3 time(s) to handle iob=true attribute.
 FlipFlop vga_b_0 has been replicated 3 time(s) to handle iob=true attribute.
@@ -656,8 +680,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 252
- Flip-Flops                                            : 252
+# Registers                                            : 241
+ Flip-Flops                                            : 241
 
 =========================================================================
 
@@ -680,25 +704,25 @@ Top Level Output File Name         : vga_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1318
+# BELS                             : 1157
 #      BUF                         : 1
 #      GND                         : 1
-#      INV                         : 23
+#      INV                         : 10
 #      LUT1                        : 53
-#      LUT2                        : 79
-#      LUT3                        : 163
-#      LUT4                        : 190
-#      LUT5                        : 108
-#      LUT6                        : 362
-#      MUXCY                       : 208
+#      LUT2                        : 50
+#      LUT3                        : 170
+#      LUT4                        : 186
+#      LUT5                        : 102
+#      LUT6                        : 347
+#      MUXCY                       : 152
 #      MUXF7                       : 9
 #      VCC                         : 1
-#      XORCY                       : 120
-# FlipFlops/Latches                : 252
+#      XORCY                       : 75
+# FlipFlops/Latches                : 241
 #      FD                          : 5
-#      FDC                         : 39
-#      FDCE                        : 10
-#      FDE                         : 156
+#      FDC                         : 42
+#      FDCE                        : 13
+#      FDE                         : 139
 #      FDR                         : 10
 #      FDRE                        : 32
 # Clock Buffers                    : 4
@@ -707,7 +731,6 @@ Primitive and Black Box Usage:
 # IO Buffers                       : 40
 #      IBUF                        : 5
 #      OBUF                        : 35
-PACKER Warning: Lut flight_phys/Msub_GND_9_o_GND_9_o_sub_27_OUT<9:0>_xor<3>111 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
 
 Device utilization summary:
 ---------------------------
@@ -716,16 +739,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             241  out of  18224     1%  
- Number of Slice LUTs:                  978  out of   9112    10%  
-    Number used as Logic:               978  out of   9112    10%  
+ Number of Slice Registers:             230  out of  18224     1%  
+ Number of Slice LUTs:                  918  out of   9112    10%  
+    Number used as Logic:               918  out of   9112    10%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    985
-   Number with an unused Flip Flop:     744  out of    985    75%  
-   Number with an unused LUT:             7  out of    985     0%  
-   Number of fully used LUT-FF pairs:   234  out of    985    23%  
-   Number of unique control sets:        16
+ Number of LUT Flip Flop pairs used:    923
+   Number with an unused Flip Flop:     693  out of    923    75%  
+   Number with an unused LUT:             5  out of    923     0%  
+   Number of fully used LUT-FF pairs:   225  out of    923    24%  
+   Number of unique control sets:        15
 
 IO Utilization: 
  Number of IOs:                          49
@@ -758,9 +781,9 @@ Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 ClkPort                            | BUFGP                  | 34    |
 DIV_CLK_22                         | NONE(Flash_Blue)       | 1     |
-DIV_CLK_19                         | BUFG                   | 124   |
-DIV_CLK_1                          | BUFG                   | 57    |
-DIV_CLK_20                         | BUFG                   | 36    |
+DIV_CLK_20                         | BUFG                   | 22    |
+DIV_CLK_19                         | BUFG                   | 121   |
+DIV_CLK_1                          | BUFG                   | 63    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -772,10 +795,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.934ns (Maximum Frequency: 168.533MHz)
-   Minimum input arrival time before clock: 5.342ns
+   Minimum period: 5.561ns (Maximum Frequency: 179.833MHz)
+   Minimum input arrival time before clock: 5.580ns
    Maximum output required time after clock: 5.951ns
-   Maximum combinational path delay: 5.373ns
+   Maximum combinational path delay: 5.406ns
 
 Timing Details:
 ---------------
@@ -783,10 +806,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_CLK_22'
-  Clock period: 2.048ns (frequency: 488.317MHz)
+  Clock period: 1.950ns (frequency: 512.794MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.048ns (Levels of Logic = 1)
+Delay:               1.950ns (Levels of Logic = 1)
   Source:            Flash_Blue (FF)
   Destination:       Flash_Blue (FF)
   Source Clock:      DIV_CLK_22 rising
@@ -796,12 +819,12 @@ Delay:               2.048ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.447   0.579  Flash_Blue (Flash_Blue)
-     INV:I->O              5   0.206   0.714  Flash_Blue_inv1_INV_0 (Flash_Blue_inv)
+     FDR:C->Q              2   0.447   0.616  Flash_Blue (Flash_Blue)
+     INV:I->O              1   0.206   0.579  Flash_Blue_INV_19_o1_INV_0 (Flash_Blue_INV_19_o)
      FDR:D                     0.102          Flash_Blue
     ----------------------------------------
-    Total                      2.048ns (0.755ns logic, 1.293ns route)
-                                       (36.9% logic, 63.1% route)
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ClkPort'
@@ -849,89 +872,86 @@ Delay:               2.085ns (Levels of Logic = 24)
                                        (72.2% logic, 27.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'DIV_CLK_19'
-  Clock period: 5.934ns (frequency: 168.533MHz)
-  Total number of paths / destination ports: 3673 / 124
+Timing constraint: Default period analysis for Clock 'DIV_CLK_20'
+  Clock period: 5.561ns (frequency: 179.833MHz)
+  Total number of paths / destination ports: 1133 / 22
 -------------------------------------------------------------------------
-Delay:               5.934ns (Levels of Logic = 6)
+Delay:               5.561ns (Levels of Logic = 5)
+  Source:            flight_control/Bird_Y_T_8 (FF)
+  Destination:       flight_control/Bird_Y_T_6 (FF)
+  Source Clock:      DIV_CLK_20 rising
+  Destination Clock: DIV_CLK_20 rising
+
+  Data Path: flight_control/Bird_Y_T_8 to flight_control/Bird_Y_T_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.447   1.118  flight_control/Bird_Y_T_8 (flight_control/Bird_Y_T_8)
+     LUT6:I1->O           12   0.203   0.909  flight_control/BtnU_GND_9_o_AND_77_o_SW0 (N36)
+     LUT6:I5->O            1   0.205   0.580  flight_control/BtnU_GND_9_o_AND_77_o_1 (flight_control/BtnU_GND_9_o_AND_77_o1)
+     LUT6:I5->O            8   0.205   0.803  flight_control/Mmux_Bird_Y_T[9]_GND_9_o_mux_10_OUT_rs_lut<2>1 (flight_control/Mmux_Bird_Y_T[9]_GND_9_o_mux_10_OUT_rs_lut<2>)
+     LUT5:I4->O            1   0.205   0.580  flight_control/state[2]_GND_9_o_select_25_OUT<4>31 (flight_control/state[2]_GND_9_o_select_25_OUT<4>3)
+     LUT6:I5->O            1   0.205   0.000  flight_control/state[2]_GND_9_o_select_25_OUT<6>1 (flight_control/state[2]_GND_9_o_select_25_OUT<6>)
+     FDE:D                     0.102          flight_control/Bird_Y_T_6
+    ----------------------------------------
+    Total                      5.561ns (1.572ns logic, 3.989ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_19'
+  Clock period: 5.127ns (frequency: 195.029MHz)
+  Total number of paths / destination ports: 3435 / 121
+-------------------------------------------------------------------------
+Delay:               5.127ns (Levels of Logic = 5)
   Source:            x_ram/array_X_Right_0_17 (FF)
-  Destination:       x_ram/Score_2 (FF)
+  Destination:       x_ram/out_temp_4_2 (FF)
   Source Clock:      DIV_CLK_19 rising
   Destination Clock: DIV_CLK_19 rising
 
-  Data Path: x_ram/array_X_Right_0_17 to x_ram/Score_2
+  Data Path: x_ram/array_X_Right_0_17 to x_ram/out_temp_4_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              9   0.447   1.194  x_ram/array_X_Right_0_17 (x_ram/array_X_Right_0_17)
      LUT6:I0->O            1   0.203   0.684  x_ram/out_pipe[2]_GND_4_o_LessThan_25_o12 (x_ram/out_pipe[2]_GND_4_o_LessThan_25_o11)
-     LUT6:I4->O            1   0.203   0.000  x_ram/out_pipe[2]_GND_4_o_LessThan_25_o15_F (N274)
+     LUT6:I4->O            1   0.203   0.000  x_ram/out_pipe[2]_GND_4_o_LessThan_25_o15_F (N349)
      MUXF7:I0->O           1   0.131   0.684  x_ram/out_pipe[2]_GND_4_o_LessThan_25_o15 (x_ram/out_pipe[2]_GND_4_o_LessThan_25_o14)
-     LUT5:I3->O           20   0.203   1.093  x_ram/out_pipe[2]_GND_4_o_LessThan_25_o113 (x_ram/out_pipe[2]_GND_4_o_LessThan_25_o)
-     LUT5:I4->O            1   0.205   0.580  x_ram/state[2]_GND_4_o_select_53_OUT<1>31 (x_ram/state[2]_GND_4_o_select_53_OUT<1>3)
-     LUT6:I5->O            1   0.205   0.000  x_ram/state[2]_GND_4_o_select_53_OUT<2> (x_ram/state[2]_GND_4_o_select_53_OUT<2>)
-     FDE:D                     0.102          x_ram/Score_2
+     LUT5:I3->O           19   0.203   1.072  x_ram/out_pipe[2]_GND_4_o_LessThan_25_o113 (x_ram/out_pipe[2]_GND_4_o_LessThan_25_o)
+     LUT5:I4->O            1   0.205   0.000  x_ram/state[2]_GND_4_o_select_57_OUT<1>1 (x_ram/state[2]_GND_4_o_select_57_OUT<1>)
+     FDE:D                     0.102          x_ram/out_temp_1_1
     ----------------------------------------
-    Total                      5.934ns (1.699ns logic, 4.235ns route)
-                                       (28.6% logic, 71.4% route)
+    Total                      5.127ns (1.494ns logic, 3.633ns route)
+                                       (29.1% logic, 70.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_CLK_1'
-  Clock period: 5.345ns (frequency: 187.098MHz)
-  Total number of paths / destination ports: 3932 / 133
+  Clock period: 5.341ns (frequency: 187.243MHz)
+  Total number of paths / destination ports: 4361 / 142
 -------------------------------------------------------------------------
-Delay:               5.345ns (Levels of Logic = 3)
-  Source:            syncgen/CounterX_0 (FF)
+Delay:               5.341ns (Levels of Logic = 3)
+  Source:            syncgen/CounterY_8 (FF)
   Destination:       syncgen/CounterY_9 (FF)
   Source Clock:      DIV_CLK_1 rising
   Destination Clock: DIV_CLK_1 rising
 
-  Data Path: syncgen/CounterX_0 to syncgen/CounterY_9
+  Data Path: syncgen/CounterY_8 to syncgen/CounterY_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             29   0.447   1.594  syncgen/CounterX_0 (syncgen/CounterX_0)
-     LUT5:I0->O            4   0.203   0.684  syncgen/CounterX[9]_PWR_3_o_equal_1_o<9>_SW0 (N248)
-     LUT6:I5->O            9   0.205   0.830  syncgen/CounterX[9]_PWR_3_o_equal_1_o<9> (syncgen/CounterX[9]_PWR_3_o_equal_1_o)
-     LUT2:I1->O           10   0.205   0.856  syncgen/_n0047_inv1 (syncgen/_n0047_inv)
+     FDCE:C->Q            19   0.447   1.416  syncgen/CounterY_8 (syncgen/CounterY_8)
+     LUT5:I0->O            3   0.203   0.651  syncgen/CounterY[9]_PWR_3_o_equal_5_o<9>_SW0 (N208)
+     LUT6:I5->O           10   0.205   0.961  syncgen/CounterY[9]_PWR_3_o_equal_5_o<9> (syncgen/CounterY[9]_PWR_3_o_equal_5_o)
+     LUT2:I0->O           13   0.203   0.932  syncgen/_n0047_inv1 (syncgen/_n0047_inv)
      FDCE:CE                   0.322          syncgen/CounterY_0
     ----------------------------------------
-    Total                      5.345ns (1.382ns logic, 3.963ns route)
-                                       (25.9% logic, 74.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'DIV_CLK_20'
-  Clock period: 5.800ns (frequency: 172.408MHz)
-  Total number of paths / destination ports: 10265 / 37
--------------------------------------------------------------------------
-Delay:               5.800ns (Levels of Logic = 7)
-  Source:            flight_phys/Bird_Y_B_0 (FF)
-  Destination:       flight_phys/Bird_Y_B_8 (FF)
-  Source Clock:      DIV_CLK_20 rising
-  Destination Clock: DIV_CLK_20 rising
-
-  Data Path: flight_phys/Bird_Y_B_0 to flight_phys/Bird_Y_B_8
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q             17   0.447   1.028  flight_phys/Bird_Y_B_0 (flight_phys/Bird_Y_B_0)
-     LUT2:I1->O            1   0.205   0.000  flight_phys/Madd_n0121_lut<0> (flight_phys/Madd_n0121_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  flight_phys/Madd_n0121_cy<0> (flight_phys/Madd_n0121_cy<0>)
-     XORCY:CI->O           1   0.180   0.580  flight_phys/Madd_n0121_xor<1> (flight_phys/n0121<1>)
-     LUT2:I1->O            1   0.205   0.580  flight_phys/GND_9_o_GND_9_o_OR_104_o2 (flight_phys/GND_9_o_GND_9_o_OR_104_o2)
-     LUT6:I5->O            1   0.205   0.684  flight_phys/GND_9_o_GND_9_o_OR_104_o3 (flight_phys/GND_9_o_GND_9_o_OR_104_o3)
-     LUT6:I4->O           16   0.203   1.005  flight_phys/GND_9_o_GND_9_o_OR_104_o7 (flight_phys/GND_9_o_GND_9_o_OR_104_o)
-     LUT6:I5->O            1   0.205   0.000  flight_phys/state[2]_GND_9_o_select_51_OUT<7> (flight_phys/state[2]_GND_9_o_select_51_OUT<7>)
-     FDE:D                     0.102          flight_phys/Bird_Y_B_7
-    ----------------------------------------
-    Total                      5.800ns (1.924ns logic, 3.876ns route)
-                                       (33.2% logic, 66.8% route)
+    Total                      5.341ns (1.380ns logic, 3.961ns route)
+                                       (25.8% logic, 74.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkPort'
   Total number of paths / destination ports: 23 / 23
 -------------------------------------------------------------------------
-Offset:              3.232ns (Levels of Logic = 1)
+Offset:              3.265ns (Levels of Logic = 1)
   Source:            BtnR (PAD)
   Destination:       DIV_CLK_0 (FF)
   Destination Clock: ClkPort rising
@@ -940,15 +960,38 @@ Offset:              3.232ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            55   1.222   1.580  BtnR_IBUF (Ld3_OBUF)
+     IBUF:I->O            60   1.222   1.613  BtnR_IBUF (Ld3_OBUF)
      FDC:CLR                   0.430          DIV_CLK_0
     ----------------------------------------
-    Total                      3.232ns (1.652ns logic, 1.580ns route)
-                                       (51.1% logic, 48.9% route)
+    Total                      3.265ns (1.652ns logic, 1.613ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_20'
+  Total number of paths / destination ports: 119 / 40
+-------------------------------------------------------------------------
+Offset:              5.580ns (Levels of Logic = 5)
+  Source:            BtnU (PAD)
+  Destination:       flight_control/Bird_Y_B_6 (FF)
+  Destination Clock: DIV_CLK_20 rising
+
+  Data Path: BtnU to flight_control/Bird_Y_B_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.222   1.229  BtnU_IBUF (Ld2_OBUF)
+     LUT4:I0->O            1   0.203   0.684  flight_control/state[2]_GND_9_o_select_26_OUT<6>1_SW0_SW0 (N261)
+     LUT6:I4->O            2   0.203   0.721  flight_control/state[2]_GND_9_o_select_26_OUT<6>1_SW0 (N247)
+     LUT5:I3->O            1   0.203   0.808  flight_control/state[2]_GND_9_o_select_26_OUT<4>21_SW2 (N291)
+     LUT6:I3->O            1   0.205   0.000  flight_control/state[2]_GND_9_o_select_26_OUT<6>1 (flight_control/state[2]_GND_9_o_select_26_OUT<6>)
+     FDE:D                     0.102          flight_control/Bird_Y_B_6
+    ----------------------------------------
+    Total                      5.580ns (2.138ns logic, 3.442ns route)
+                                       (38.3% logic, 61.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_19'
-  Total number of paths / destination ports: 126 / 126
+  Total number of paths / destination ports: 123 / 123
 -------------------------------------------------------------------------
 Offset:              5.342ns (Levels of Logic = 2)
   Source:            BtnR (PAD)
@@ -959,8 +1002,8 @@ Offset:              5.342ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            55   1.222   1.580  BtnR_IBUF (Ld3_OBUF)
-     INV:I->O            155   0.206   2.012  x_ram/reset_inv1_INV_0 (flight_phys/reset_inv)
+     IBUF:I->O            60   1.222   1.613  BtnR_IBUF (Ld3_OBUF)
+     INV:I->O            139   0.206   1.979  flight_control/reset_inv1_INV_0 (flight_control/reset_inv)
      FDE:CE                    0.322          x_ram/Score_0
     ----------------------------------------
     Total                      5.342ns (1.750ns logic, 3.592ns route)
@@ -968,9 +1011,9 @@ Offset:              5.342ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_1'
-  Total number of paths / destination ports: 121 / 89
+  Total number of paths / destination ports: 127 / 95
 -------------------------------------------------------------------------
-Offset:              4.957ns (Levels of Logic = 2)
+Offset:              5.401ns (Levels of Logic = 3)
   Source:            BtnR (PAD)
   Destination:       obs_log/loseCounter_31 (FF)
   Destination Clock: DIV_CLK_1 rising
@@ -979,32 +1022,13 @@ Offset:              4.957ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            55   1.222   1.809  BtnR_IBUF (Ld3_OBUF)
-     LUT4:I1->O           32   0.205   1.291  obs_log/_n00591 (obs_log/_n0059)
+     IBUF:I->O            60   1.222   1.842  BtnR_IBUF (Ld3_OBUF)
+     LUT3:I0->O            1   0.205   0.000  obs_log/_n00591_lut (obs_log/_n00591_lut)
+     MUXCY:S->O           32   0.411   1.291  obs_log/_n00591_cy (obs_log/_n0059)
      FDRE:R                    0.430          obs_log/loseCounter_0
     ----------------------------------------
-    Total                      4.957ns (1.857ns logic, 3.100ns route)
-                                       (37.5% logic, 62.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_20'
-  Total number of paths / destination ports: 102 / 72
--------------------------------------------------------------------------
-Offset:              5.342ns (Levels of Logic = 2)
-  Source:            BtnR (PAD)
-  Destination:       flight_phys/Bird_Y_B_8 (FF)
-  Destination Clock: DIV_CLK_20 rising
-
-  Data Path: BtnR to flight_phys/Bird_Y_B_8
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            55   1.222   1.580  BtnR_IBUF (Ld3_OBUF)
-     INV:I->O            155   0.206   2.012  x_ram/reset_inv1_INV_0 (flight_phys/reset_inv)
-     FDE:CE                    0.322          flight_phys/Bird_Y_T_2
-    ----------------------------------------
-    Total                      5.342ns (1.750ns logic, 3.592ns route)
-                                       (32.8% logic, 67.2% route)
+    Total                      5.401ns (2.268ns logic, 3.133ns route)
+                                       (42.0% logic, 58.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
@@ -1072,7 +1096,7 @@ Offset:              5.786ns (Levels of Logic = 3)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Delay:               5.373ns (Levels of Logic = 2)
+Delay:               5.406ns (Levels of Logic = 2)
   Source:            BtnR (PAD)
   Destination:       Ld3 (PAD)
 
@@ -1080,11 +1104,11 @@ Delay:               5.373ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            55   1.222   1.580  BtnR_IBUF (Ld3_OBUF)
+     IBUF:I->O            60   1.222   1.613  BtnR_IBUF (Ld3_OBUF)
      OBUF:I->O                 2.571          Ld3_OBUF (Ld3)
     ----------------------------------------
-    Total                      5.373ns (3.793ns logic, 1.580ns route)
-                                       (70.6% logic, 29.4% route)
+    Total                      5.406ns (3.793ns logic, 1.613ns route)
+                                       (70.2% logic, 29.8% route)
 
 =========================================================================
 
@@ -1097,10 +1121,10 @@ Clock to Setup on destination clock ClkPort
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 ClkPort        |    2.085|         |         |         |
-DIV_CLK_1      |   10.984|         |         |         |
-DIV_CLK_19     |   12.298|         |         |         |
-DIV_CLK_20     |    5.719|         |         |         |
-DIV_CLK_22     |    2.376|         |         |         |
+DIV_CLK_1      |   13.267|         |         |         |
+DIV_CLK_19     |   10.924|         |         |         |
+DIV_CLK_20     |    7.167|         |         |         |
+DIV_CLK_22     |    2.627|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_1
@@ -1108,9 +1132,9 @@ Clock to Setup on destination clock DIV_CLK_1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    5.345|         |         |         |
-DIV_CLK_19     |    7.177|         |         |         |
-DIV_CLK_20     |    5.032|         |         |         |
+DIV_CLK_1      |    5.341|         |         |         |
+DIV_CLK_19     |    7.917|         |         |         |
+DIV_CLK_20     |    6.047|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_19
@@ -1118,8 +1142,8 @@ Clock to Setup on destination clock DIV_CLK_19
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    2.970|         |         |         |
-DIV_CLK_19     |    5.934|         |         |         |
+DIV_CLK_1      |    3.572|         |         |         |
+DIV_CLK_19     |    5.127|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_20
@@ -1127,8 +1151,8 @@ Clock to Setup on destination clock DIV_CLK_20
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    1.940|         |         |         |
-DIV_CLK_20     |    5.800|         |         |         |
+DIV_CLK_1      |    5.269|         |         |         |
+DIV_CLK_20     |    5.561|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_22
@@ -1136,21 +1160,21 @@ Clock to Setup on destination clock DIV_CLK_22
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    2.619|         |         |         |
-DIV_CLK_22     |    2.048|         |         |         |
+DIV_CLK_1      |    3.124|         |         |         |
+DIV_CLK_22     |    1.950|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.60 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.31 secs
  
 --> 
 
-Total memory usage is 4539348 kilobytes
+Total memory usage is 4539344 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   87 (   0 filtered)
-Number of infos    :   19 (   0 filtered)
+Number of warnings :  104 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
 

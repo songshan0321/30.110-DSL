@@ -8,28 +8,28 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_RAM.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/X_RAM.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/X_initial_ROM.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/X_initial_ROM.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/Y_ROM.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/Y_ROM.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/ee201_debounce_DPB_SCEN_CCEN_MCEN.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/ee201_debounce_DPB_SCEN_CCEN_MCEN.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/flight_physics.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/flight_control.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/hvsync_generator.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/hvsync_generator.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/obstacle_logic.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/obstacle_logic.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/GitHub/FlappyFPGA-master/FlappyFPGA-master/Flappy-VGA/vga_top.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Term 6/DSL/30.110-DSL/flappy_src/vga_top.v&quot; into library work</arg>
 </msg>
 
 </messages>
